@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2121A8E34B85931584278C16 /* Pods_Challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D64810E8BCF98757F96588A7 /* Pods_Challenge.framework */; };
 		5C24CA05274BABEF00E221FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA04274BABEF00E221FE /* AppDelegate.swift */; };
 		5C24CA07274BABEF00E221FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA06274BABEF00E221FE /* SceneDelegate.swift */; };
-		5C24CA09274BABEF00E221FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA08274BABEF00E221FE /* ViewController.swift */; };
+		5C24CA09274BABEF00E221FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA08274BABEF00E221FE /* HomeViewController.swift */; };
 		5C24CA0C274BABEF00E221FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C24CA0A274BABEF00E221FE /* Main.storyboard */; };
 		5C24CA0F274BABEF00E221FE /* Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA0D274BABEF00E221FE /* Challenge.xcdatamodeld */; };
 		5C24CA11274BABF100E221FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C24CA10274BABF100E221FE /* Assets.xcassets */; };
@@ -17,6 +18,35 @@
 		5C24CA1F274BABF200E221FE /* ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA1E274BABF200E221FE /* ChallengeTests.swift */; };
 		5C24CA29274BABF200E221FE /* ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA28274BABF200E221FE /* ChallengeUITests.swift */; };
 		5C24CA2B274BABF200E221FE /* ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA2A274BABF200E221FE /* ChallengeUITestsLaunchTests.swift */; };
+		5C24CA39274BACBE00E221FE /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA38274BACBE00E221FE /* UIView+Extension.swift */; };
+		5C24CA3C274BAF8A00E221FE /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA3B274BAF8A00E221FE /* APIClient.swift */; };
+		5C24CA3E274BAFB300E221FE /* AlamofireClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA3D274BAFB300E221FE /* AlamofireClient.swift */; };
+		5C24CA40274BB1CD00E221FE /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA3F274BB1CD00E221FE /* Repository.swift */; };
+		5C24CA43274BB21600E221FE /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA42274BB21600E221FE /* UseCase.swift */; };
+		5C24CA46274BC4A100E221FE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA45274BC4A100E221FE /* BaseViewController.swift */; };
+		5C24CA48274BC54000E221FE /* uiViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA47274BC54000E221FE /* uiViewControllerExtension.swift */; };
+		5C24CA4B274BC94D00E221FE /* GetAirLineDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA4A274BC94D00E221FE /* GetAirLineDataSource.swift */; };
+		5C24CA4D274BC99E00E221FE /* GetAirLinesRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA4C274BC99E00E221FE /* GetAirLinesRemoteDataSource.swift */; };
+		5C24CA4F274BCA2500E221FE /* APIsUrlsConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA4E274BCA2500E221FE /* APIsUrlsConstant.swift */; };
+		5C24CA51274BCAD400E221FE /* GetAirLinesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA50274BCAD400E221FE /* GetAirLinesRepository.swift */; };
+		5C24CA54274BCCBD00E221FE /* AirlinesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA53274BCCBD00E221FE /* AirlinesModel.swift */; };
+		5C24CA56274BCD4B00E221FE /* AirlinesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA55274BCD4B00E221FE /* AirlinesUseCase.swift */; };
+		5C24CA59274BD01100E221FE /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA58274BD01100E221FE /* Factory.swift */; };
+		5C24CA5C274BD0D200E221FE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA5B274BD0D200E221FE /* HomeViewModel.swift */; };
+		5C24CA5E274BD65D00E221FE /* AirlinesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C24CA5D274BD65D00E221FE /* AirlinesTableViewCell.swift */; };
+		5C369987274CFD1B00D52B83 /* GetAirLineLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C369986274CFD1B00D52B83 /* GetAirLineLocalDataSource.swift */; };
+		5C369989274CFEC500D52B83 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C369988274CFEC500D52B83 /* Reachability.swift */; };
+		5C78EA29274C3F1200AFA6AF /* AirLinesDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C78EA28274C3F1200AFA6AF /* AirLinesDetailsViewController.swift */; };
+		5C96591F274CCD4B0017C122 /* AddNewAirLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C96591E274CCD4B0017C122 /* AddNewAirLineViewController.swift */; };
+		5C965922274CE56F0017C122 /* AddAirLineDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C965921274CE56F0017C122 /* AddAirLineDataSource.swift */; };
+		5C965924274CE5830017C122 /* AddAirLineRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C965923274CE5830017C122 /* AddAirLineRemoteDataSource.swift */; };
+		5C965926274CE5900017C122 /* AddAirLineRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C965925274CE5900017C122 /* AddAirLineRepository.swift */; };
+		5C965928274CE6DC0017C122 /* AddNewAirLineUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C965927274CE6DC0017C122 /* AddNewAirLineUseCase.swift */; };
+		5C96592A274CE7990017C122 /* AddNewAirLineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C965929274CE7990017C122 /* AddNewAirLineModel.swift */; };
+		5C96592C274CF1800017C122 /* AddNewAirLineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C96592B274CF1800017C122 /* AddNewAirLineViewModel.swift */; };
+		5C96592F274CF6E60017C122 /* OfflineData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C96592D274CF6E60017C122 /* OfflineData.xcdatamodeld */; };
+		9AADF48095D0F37FAC978691 /* Pods_Challenge_ChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D98A217280E3B1B38D8677AA /* Pods_Challenge_ChallengeUITests.framework */; };
+		D18D6596D45CDEA893FFA047 /* Pods_ChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDD3B981D630F88DBAE9A2F /* Pods_ChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +67,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47616CB17543F66085C4FC60 /* Pods-Challenge-ChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge-ChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-Challenge-ChallengeUITests/Pods-Challenge-ChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		482B56D71C982461436A5352 /* Pods-Challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge.release.xcconfig"; path = "Target Support Files/Pods-Challenge/Pods-Challenge.release.xcconfig"; sourceTree = "<group>"; };
+		4CDD3B981D630F88DBAE9A2F /* Pods_ChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C24CA01274BABEF00E221FE /* Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C24CA04274BABEF00E221FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C24CA06274BABEF00E221FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5C24CA08274BABEF00E221FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5C24CA08274BABEF00E221FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5C24CA0B274BABEF00E221FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C24CA0E274BABEF00E221FE /* Challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Challenge.xcdatamodel; sourceTree = "<group>"; };
 		5C24CA10274BABF100E221FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +84,39 @@
 		5C24CA24274BABF200E221FE /* ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C24CA28274BABF200E221FE /* ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeUITests.swift; sourceTree = "<group>"; };
 		5C24CA2A274BABF200E221FE /* ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5C24CA38274BACBE00E221FE /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		5C24CA3B274BAF8A00E221FE /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		5C24CA3D274BAFB300E221FE /* AlamofireClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireClient.swift; sourceTree = "<group>"; };
+		5C24CA3F274BB1CD00E221FE /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		5C24CA42274BB21600E221FE /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		5C24CA45274BC4A100E221FE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5C24CA47274BC54000E221FE /* uiViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uiViewControllerExtension.swift; sourceTree = "<group>"; };
+		5C24CA4A274BC94D00E221FE /* GetAirLineDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAirLineDataSource.swift; sourceTree = "<group>"; };
+		5C24CA4C274BC99E00E221FE /* GetAirLinesRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAirLinesRemoteDataSource.swift; sourceTree = "<group>"; };
+		5C24CA4E274BCA2500E221FE /* APIsUrlsConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIsUrlsConstant.swift; sourceTree = "<group>"; };
+		5C24CA50274BCAD400E221FE /* GetAirLinesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAirLinesRepository.swift; sourceTree = "<group>"; };
+		5C24CA53274BCCBD00E221FE /* AirlinesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlinesModel.swift; sourceTree = "<group>"; };
+		5C24CA55274BCD4B00E221FE /* AirlinesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlinesUseCase.swift; sourceTree = "<group>"; };
+		5C24CA58274BD01100E221FE /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		5C24CA5B274BD0D200E221FE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		5C24CA5D274BD65D00E221FE /* AirlinesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlinesTableViewCell.swift; sourceTree = "<group>"; };
+		5C369986274CFD1B00D52B83 /* GetAirLineLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAirLineLocalDataSource.swift; sourceTree = "<group>"; };
+		5C369988274CFEC500D52B83 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		5C78EA28274C3F1200AFA6AF /* AirLinesDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirLinesDetailsViewController.swift; sourceTree = "<group>"; };
+		5C96591E274CCD4B0017C122 /* AddNewAirLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAirLineViewController.swift; sourceTree = "<group>"; };
+		5C965921274CE56F0017C122 /* AddAirLineDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAirLineDataSource.swift; sourceTree = "<group>"; };
+		5C965923274CE5830017C122 /* AddAirLineRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAirLineRemoteDataSource.swift; sourceTree = "<group>"; };
+		5C965925274CE5900017C122 /* AddAirLineRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAirLineRepository.swift; sourceTree = "<group>"; };
+		5C965927274CE6DC0017C122 /* AddNewAirLineUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAirLineUseCase.swift; sourceTree = "<group>"; };
+		5C965929274CE7990017C122 /* AddNewAirLineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAirLineModel.swift; sourceTree = "<group>"; };
+		5C96592B274CF1800017C122 /* AddNewAirLineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAirLineViewModel.swift; sourceTree = "<group>"; };
+		5C96592E274CF6E60017C122 /* OfflineData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OfflineData.xcdatamodel; sourceTree = "<group>"; };
+		C6E15E934791BA59E7F232E3 /* Pods-ChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeTests/Pods-ChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		CEFDBD4AB3B2AA9DDF3B2168 /* Pods-Challenge-ChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge-ChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Challenge-ChallengeUITests/Pods-Challenge-ChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D64810E8BCF98757F96588A7 /* Pods_Challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98A217280E3B1B38D8677AA /* Pods_Challenge_ChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Challenge_ChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEBA0796D0A15B647341D85 /* Pods-Challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Challenge.debug.xcconfig"; path = "Target Support Files/Pods-Challenge/Pods-Challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		FC9203E50695638100523FF0 /* Pods-ChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeTests/Pods-ChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2121A8E34B85931584278C16 /* Pods_Challenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D18D6596D45CDEA893FFA047 /* Pods_ChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AADF48095D0F37FAC978691 /* Pods_Challenge_ChallengeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +154,8 @@
 				5C24CA1D274BABF200E221FE /* ChallengeTests */,
 				5C24CA27274BABF200E221FE /* ChallengeUITests */,
 				5C24CA02274BABEF00E221FE /* Products */,
+				B223148862F92A28F216CCAA /* Pods */,
+				7749F248858C5E61EBA9D654 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,13 +172,12 @@
 		5C24CA03274BABEF00E221FE /* Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				5C24CA04274BABEF00E221FE /* AppDelegate.swift */,
-				5C24CA06274BABEF00E221FE /* SceneDelegate.swift */,
-				5C24CA08274BABEF00E221FE /* ViewController.swift */,
-				5C24CA0A274BABEF00E221FE /* Main.storyboard */,
-				5C24CA10274BABF100E221FE /* Assets.xcassets */,
+				5C24CA57274BCFD800E221FE /* SupportingFiles */,
+				5C24CA44274BC47C00E221FE /* Presentation */,
+				5C24CA41274BB20800E221FE /* Business */,
+				5C24CA3A274BAF6D00E221FE /* Data */,
+				5C24CA37274BAC9900E221FE /* Util */,
 				5C24CA12274BABF100E221FE /* LaunchScreen.storyboard */,
-				5C24CA15274BABF100E221FE /* Info.plist */,
 				5C24CA0D274BABEF00E221FE /* Challenge.xcdatamodeld */,
 			);
 			path = Challenge;
@@ -130,6 +200,145 @@
 			path = ChallengeUITests;
 			sourceTree = "<group>";
 		};
+		5C24CA37274BAC9900E221FE /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				5C24CA38274BACBE00E221FE /* UIView+Extension.swift */,
+				5C24CA47274BC54000E221FE /* uiViewControllerExtension.swift */,
+				5C369988274CFEC500D52B83 /* Reachability.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		5C24CA3A274BAF6D00E221FE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5C965920274CE54F0017C122 /* AddAirLine */,
+				5C24CA52274BCCA800E221FE /* Models */,
+				5C24CA49274BC8E800E221FE /* GetAirLines */,
+				5C24CA3B274BAF8A00E221FE /* APIClient.swift */,
+				5C24CA3D274BAFB300E221FE /* AlamofireClient.swift */,
+				5C24CA3F274BB1CD00E221FE /* Repository.swift */,
+				5C24CA4E274BCA2500E221FE /* APIsUrlsConstant.swift */,
+				5C96592D274CF6E60017C122 /* OfflineData.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5C24CA41274BB20800E221FE /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				5C24CA42274BB21600E221FE /* UseCase.swift */,
+				5C24CA55274BCD4B00E221FE /* AirlinesUseCase.swift */,
+				5C965927274CE6DC0017C122 /* AddNewAirLineUseCase.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		5C24CA44274BC47C00E221FE /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				5C96591D274CCD260017C122 /* AddNewAirLine */,
+				5C78EA27274C3EED00AFA6AF /* AirLinesDetails */,
+				5C24CA5A274BD0BD00E221FE /* Home */,
+				5C24CA0A274BABEF00E221FE /* Main.storyboard */,
+				5C24CA45274BC4A100E221FE /* BaseViewController.swift */,
+				5C24CA58274BD01100E221FE /* Factory.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5C24CA49274BC8E800E221FE /* GetAirLines */ = {
+			isa = PBXGroup;
+			children = (
+				5C24CA4A274BC94D00E221FE /* GetAirLineDataSource.swift */,
+				5C24CA4C274BC99E00E221FE /* GetAirLinesRemoteDataSource.swift */,
+				5C24CA50274BCAD400E221FE /* GetAirLinesRepository.swift */,
+				5C369986274CFD1B00D52B83 /* GetAirLineLocalDataSource.swift */,
+			);
+			path = GetAirLines;
+			sourceTree = "<group>";
+		};
+		5C24CA52274BCCA800E221FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5C24CA53274BCCBD00E221FE /* AirlinesModel.swift */,
+				5C965929274CE7990017C122 /* AddNewAirLineModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5C24CA57274BCFD800E221FE /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5C24CA04274BABEF00E221FE /* AppDelegate.swift */,
+				5C24CA06274BABEF00E221FE /* SceneDelegate.swift */,
+				5C24CA15274BABF100E221FE /* Info.plist */,
+				5C24CA10274BABF100E221FE /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		5C24CA5A274BD0BD00E221FE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5C24CA08274BABEF00E221FE /* HomeViewController.swift */,
+				5C24CA5B274BD0D200E221FE /* HomeViewModel.swift */,
+				5C24CA5D274BD65D00E221FE /* AirlinesTableViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5C78EA27274C3EED00AFA6AF /* AirLinesDetails */ = {
+			isa = PBXGroup;
+			children = (
+				5C78EA28274C3F1200AFA6AF /* AirLinesDetailsViewController.swift */,
+			);
+			path = AirLinesDetails;
+			sourceTree = "<group>";
+		};
+		5C96591D274CCD260017C122 /* AddNewAirLine */ = {
+			isa = PBXGroup;
+			children = (
+				5C96591E274CCD4B0017C122 /* AddNewAirLineViewController.swift */,
+				5C96592B274CF1800017C122 /* AddNewAirLineViewModel.swift */,
+			);
+			path = AddNewAirLine;
+			sourceTree = "<group>";
+		};
+		5C965920274CE54F0017C122 /* AddAirLine */ = {
+			isa = PBXGroup;
+			children = (
+				5C965921274CE56F0017C122 /* AddAirLineDataSource.swift */,
+				5C965923274CE5830017C122 /* AddAirLineRemoteDataSource.swift */,
+				5C965925274CE5900017C122 /* AddAirLineRepository.swift */,
+			);
+			path = AddAirLine;
+			sourceTree = "<group>";
+		};
+		7749F248858C5E61EBA9D654 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D64810E8BCF98757F96588A7 /* Pods_Challenge.framework */,
+				D98A217280E3B1B38D8677AA /* Pods_Challenge_ChallengeUITests.framework */,
+				4CDD3B981D630F88DBAE9A2F /* Pods_ChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B223148862F92A28F216CCAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBEBA0796D0A15B647341D85 /* Pods-Challenge.debug.xcconfig */,
+				482B56D71C982461436A5352 /* Pods-Challenge.release.xcconfig */,
+				CEFDBD4AB3B2AA9DDF3B2168 /* Pods-Challenge-ChallengeUITests.debug.xcconfig */,
+				47616CB17543F66085C4FC60 /* Pods-Challenge-ChallengeUITests.release.xcconfig */,
+				FC9203E50695638100523FF0 /* Pods-ChallengeTests.debug.xcconfig */,
+				C6E15E934791BA59E7F232E3 /* Pods-ChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +346,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C24CA2E274BABF200E221FE /* Build configuration list for PBXNativeTarget "Challenge" */;
 			buildPhases = (
+				07BC6211CA370699AE07824E /* [CP] Check Pods Manifest.lock */,
 				5C24C9FD274BABEE00E221FE /* Sources */,
 				5C24C9FE274BABEE00E221FE /* Frameworks */,
 				5C24C9FF274BABEE00E221FE /* Resources */,
+				A783E29BF2EC045FAC6AA403 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +365,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C24CA31274BABF200E221FE /* Build configuration list for PBXNativeTarget "ChallengeTests" */;
 			buildPhases = (
+				E7D027A4A45948CAE9823457 /* [CP] Check Pods Manifest.lock */,
 				5C24CA16274BABF200E221FE /* Sources */,
 				5C24CA17274BABF200E221FE /* Frameworks */,
 				5C24CA18274BABF200E221FE /* Resources */,
@@ -172,9 +384,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C24CA34274BABF200E221FE /* Build configuration list for PBXNativeTarget "ChallengeUITests" */;
 			buildPhases = (
+				00138E9704CDAA95DAF4F92F /* [CP] Check Pods Manifest.lock */,
 				5C24CA20274BABF200E221FE /* Sources */,
 				5C24CA21274BABF200E221FE /* Frameworks */,
 				5C24CA22274BABF200E221FE /* Resources */,
+				D661280596DF7785D3624E90 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,15 +470,145 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00138E9704CDAA95DAF4F92F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Challenge-ChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		07BC6211CA370699AE07824E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A783E29BF2EC045FAC6AA403 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Challenge/Pods-Challenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Challenge/Pods-Challenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Challenge/Pods-Challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D661280596DF7785D3624E90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Challenge-ChallengeUITests/Pods-Challenge-ChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Challenge-ChallengeUITests/Pods-Challenge-ChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Challenge-ChallengeUITests/Pods-Challenge-ChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7D027A4A45948CAE9823457 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5C24C9FD274BABEE00E221FE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C24CA09274BABEF00E221FE /* ViewController.swift in Sources */,
+				5C24CA5E274BD65D00E221FE /* AirlinesTableViewCell.swift in Sources */,
+				5C24CA5C274BD0D200E221FE /* HomeViewModel.swift in Sources */,
+				5C369987274CFD1B00D52B83 /* GetAirLineLocalDataSource.swift in Sources */,
+				5C965926274CE5900017C122 /* AddAirLineRepository.swift in Sources */,
+				5C965928274CE6DC0017C122 /* AddNewAirLineUseCase.swift in Sources */,
+				5C78EA29274C3F1200AFA6AF /* AirLinesDetailsViewController.swift in Sources */,
+				5C24CA09274BABEF00E221FE /* HomeViewController.swift in Sources */,
+				5C24CA4D274BC99E00E221FE /* GetAirLinesRemoteDataSource.swift in Sources */,
+				5C96592C274CF1800017C122 /* AddNewAirLineViewModel.swift in Sources */,
+				5C24CA56274BCD4B00E221FE /* AirlinesUseCase.swift in Sources */,
+				5C96592F274CF6E60017C122 /* OfflineData.xcdatamodeld in Sources */,
+				5C96591F274CCD4B0017C122 /* AddNewAirLineViewController.swift in Sources */,
+				5C24CA3E274BAFB300E221FE /* AlamofireClient.swift in Sources */,
 				5C24CA0F274BABEF00E221FE /* Challenge.xcdatamodeld in Sources */,
+				5C965924274CE5830017C122 /* AddAirLineRemoteDataSource.swift in Sources */,
+				5C24CA40274BB1CD00E221FE /* Repository.swift in Sources */,
 				5C24CA05274BABEF00E221FE /* AppDelegate.swift in Sources */,
+				5C96592A274CE7990017C122 /* AddNewAirLineModel.swift in Sources */,
+				5C24CA54274BCCBD00E221FE /* AirlinesModel.swift in Sources */,
+				5C24CA46274BC4A100E221FE /* BaseViewController.swift in Sources */,
+				5C24CA39274BACBE00E221FE /* UIView+Extension.swift in Sources */,
+				5C24CA4F274BCA2500E221FE /* APIsUrlsConstant.swift in Sources */,
+				5C24CA48274BC54000E221FE /* uiViewControllerExtension.swift in Sources */,
+				5C24CA4B274BC94D00E221FE /* GetAirLineDataSource.swift in Sources */,
+				5C24CA43274BB21600E221FE /* UseCase.swift in Sources */,
+				5C24CA59274BD01100E221FE /* Factory.swift in Sources */,
 				5C24CA07274BABEF00E221FE /* SceneDelegate.swift in Sources */,
+				5C965922274CE56F0017C122 /* AddAirLineDataSource.swift in Sources */,
+				5C24CA51274BCAD400E221FE /* GetAirLinesRepository.swift in Sources */,
+				5C369989274CFEC500D52B83 /* Reachability.swift in Sources */,
+				5C24CA3C274BAF8A00E221FE /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,13 +782,15 @@
 		};
 		5C24CA2F274BABF200E221FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBEBA0796D0A15B647341D85 /* Pods-Challenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Challenge/Info.plist;
+				INFOPLIST_FILE = Challenge/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Challenge;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -465,13 +811,15 @@
 		};
 		5C24CA30274BABF200E221FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 482B56D71C982461436A5352 /* Pods-Challenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Challenge/Info.plist;
+				INFOPLIST_FILE = Challenge/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Challenge;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -492,6 +840,7 @@
 		};
 		5C24CA32274BABF200E221FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC9203E50695638100523FF0 /* Pods-ChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +865,7 @@
 		};
 		5C24CA33274BABF200E221FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6E15E934791BA59E7F232E3 /* Pods-ChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +890,7 @@
 		};
 		5C24CA35274BABF200E221FE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEFDBD4AB3B2AA9DDF3B2168 /* Pods-Challenge-ChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -562,6 +913,7 @@
 		};
 		5C24CA36274BABF200E221FE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47616CB17543F66085C4FC60 /* Pods-Challenge-ChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -631,6 +983,16 @@
 			);
 			currentVersion = 5C24CA0E274BABEF00E221FE /* Challenge.xcdatamodel */;
 			path = Challenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		5C96592D274CF6E60017C122 /* OfflineData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5C96592E274CF6E60017C122 /* OfflineData.xcdatamodel */,
+			);
+			currentVersion = 5C96592E274CF6E60017C122 /* OfflineData.xcdatamodel */;
+			path = OfflineData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
