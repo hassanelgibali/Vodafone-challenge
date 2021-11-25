@@ -44,6 +44,35 @@ class GetAirLinesRepository: Repository
         }
     }
     
+    func saveAirLineRecordsInDB(responseValue:AirlinesModel){
+        let entity =
+            NSEntityDescription.entity(forEntityName: "AirLinesData",
+                                       in: context)!
+        
+        for index in responseValue {
+            let mangedMbject = NSManagedObject(entity: entity,
+                                               insertInto: context)
+            mangedMbject.setValue(index.slogan, forKey: "slogan")
+            mangedMbject.setValue(index.id, forKey: "id")
+            mangedMbject.setValue(index.name, forKey: "name")
+            mangedMbject.setValue(index.country, forKey: "country")
+            mangedMbject.setValue(index.established, forKey: "established")
+            mangedMbject.setValue(index.headQuaters, forKey: "headquarter")
+            mangedMbject.setValue(index.website, forKey: "website")
+            mangedMbject.setValue(index.logo, forKey: "logo")
+
+
+
+            
+            
+            do {
+                try context.save()
+            } catch let error as NSError {
+                print("Could not save. \(error), \(error.userInfo)")
+            }
+        }
+    }
+    
     
     // MARK: - implement Repository Protocol
     
@@ -60,35 +89,8 @@ class GetAirLinesRepository: Repository
                     let  responseValue = AirlinesResponseValues.init(result:response)
                     compilationHandler(responseValue,error)
                     self.deleteAllAirLinesRecords()
-                    let entity =
-                        NSEntityDescription.entity(forEntityName: "AirLinesData",
-                                                   in: context)!
-                    
-                    for index in responseValue.result {
-                        let mangedMbject = NSManagedObject(entity: entity,
-                                                           insertInto: context)
-                        mangedMbject.setValue(index.slogan, forKey: "slogan")
-                        mangedMbject.setValue(index.id, forKey: "id")
-                        mangedMbject.setValue(index.name, forKey: "name")
-                        mangedMbject.setValue(index.country, forKey: "country")
-                        mangedMbject.setValue(index.established, forKey: "established")
-                        mangedMbject.setValue(index.headQuaters, forKey: "headquarter")
-                        mangedMbject.setValue(index.website, forKey: "website")
-                        mangedMbject.setValue(index.logo, forKey: "logo")
-
-
-
-                        
-                        
-                        do {
-                            try context.save()
-                        } catch let error as NSError {
-                            print("Could not save. \(error), \(error.userInfo)")
-                        }
-                    }
-
-                    
-                                    
+                    self.saveAirLineRecordsInDB(responseValue: responseValue.result)
+                  
                 }
                 catch {
                     print("JSONSerialization error:")
@@ -101,7 +103,7 @@ class GetAirLinesRepository: Repository
                 if response != nil{
                     var localAirLinesList = [AirlinesModelElement]()
                     for airLine in response as![AirLinesData]{
-                        let localAirLine = AirlinesModelElement(id: Int(airLine.id), name: airLine.name, logo: airLine.logo, slogan: airLine.slogan, requestedID: "")
+                        let localAirLine = AirlinesModelElement(id: Int(airLine.id), name: airLine.name, country: airLine.country,logo: airLine.logo, slogan: airLine.slogan, headQuaters:airLine.headquarter, requestedID: "")
                         localAirLinesList.append(localAirLine)
                     }
                     let  responseValue = AirlinesResponseValues.init(result:localAirLinesList)
