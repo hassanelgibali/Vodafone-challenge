@@ -9,7 +9,8 @@ import Foundation
 class HomeViewModel:NSObject {
     
     var airLinesUseCase: AirlinesUseCase?
-   
+    var filtrdAirLinesList = [AirlinesModelElement]()
+
 
     
     private(set) var airLinesData : AirlinesModel! {
@@ -45,6 +46,18 @@ class HomeViewModel:NSObject {
             }
             self?.airLinesData = responseValue.result
         })
+    }
+    
+    func filterAirLineData(_ query:String?){
+        filtrdAirLinesList.removeAll()
+        for string in airLinesData {
+            
+            if string.name?.lowercased().contains(((query?.lowercased())!)) ?? false||string.country?.lowercased().contains((query?.lowercased())!) ?? false||String(string.id ?? 0).elementsEqual((query?.lowercased())!) {
+                filtrdAirLinesList.append(string)
+               
+            }
+        }
+
     }
     
 

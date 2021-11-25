@@ -16,7 +16,6 @@ class HomeViewController: BaseViewController {
     
     private var homeViewModel:HomeViewModel!
     var airLinesList = [AirlinesModelElement]()
-    var filtrdAirLinesList = [AirlinesModelElement]()
     var isAirLinesListfiltred = false
     
     override func viewWillAppear(_ animated: Bool) {
@@ -67,8 +66,8 @@ class HomeViewController: BaseViewController {
 
 extension HomeViewController:UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if !filtrdAirLinesList.isEmpty {
-            return filtrdAirLinesList.count
+        if !homeViewModel.filtrdAirLinesList.isEmpty {
+            return homeViewModel.filtrdAirLinesList.count
         }
         return  isAirLinesListfiltred ? 0 : airLinesList.count
         
@@ -76,8 +75,8 @@ extension HomeViewController:UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AirlinesTableViewCell
-        if !filtrdAirLinesList.isEmpty {
-            cell.airLineNameLbl.text = filtrdAirLinesList[indexPath.row].name
+        if !homeViewModel.filtrdAirLinesList.isEmpty {
+            cell.airLineNameLbl.text = homeViewModel.filtrdAirLinesList[indexPath.row].name
 
         }else {
             cell.airLineNameLbl.text = airLinesList[indexPath.row].name
@@ -90,8 +89,8 @@ extension HomeViewController:UITableViewDataSource,UITableViewDelegate{
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let airLineDetailsVC = self.storyboard!.instantiateViewController(withIdentifier: "AirLineDetailsVC") as! AirLinesDetailsViewController
-        if !filtrdAirLinesList.isEmpty {
-            airLineDetailsVC.airLinesListElemnt = filtrdAirLinesList[indexPath.row]
+        if !homeViewModel.filtrdAirLinesList.isEmpty {
+            airLineDetailsVC.airLinesListElemnt = homeViewModel.filtrdAirLinesList[indexPath.row]
 
         }else {
             airLineDetailsVC.airLinesListElemnt = airLinesList[indexPath.row]
@@ -107,14 +106,9 @@ extension HomeViewController:UITableViewDataSource,UITableViewDelegate{
 
 extension HomeViewController : UITextFieldDelegate {
     func filterSearchAirLinesText(_ query:String?) {
-        filtrdAirLinesList.removeAll()
-        for string in airLinesList {
-            
-            if string.name?.lowercased().contains(((query?.lowercased())!)) ?? false||string.country?.lowercased().contains((query?.lowercased())!) ?? false||String(string.id ?? 0).elementsEqual((query?.lowercased())!) {
-                filtrdAirLinesList.append(string)
-               
-            }
-        }
+        
+        homeViewModel.filterAirLineData(query)
+
         airLinesTableView.reloadData()
         isAirLinesListfiltred = true
     }
@@ -128,7 +122,7 @@ extension HomeViewController : UITextFieldDelegate {
             if let text = textField.text {
                 if (NSEqualRanges(range, textFieldRange) && string.count == 0) {
                     isAirLinesListfiltred = false
-                    filtrdAirLinesList.removeAll()
+                    homeViewModel.filtrdAirLinesList.removeAll()
                     airLinesTableView.reloadData()
                 }else {
                     if let char = string.cString(using: String.Encoding.utf8) {
@@ -136,7 +130,7 @@ extension HomeViewController : UITextFieldDelegate {
                         if (isBackSpace == -92) {
                             textField.text = ""
                             isAirLinesListfiltred = false
-                            filtrdAirLinesList.removeAll()
+                            homeViewModel.filtrdAirLinesList.removeAll()
                             airLinesTableView.reloadData()
                         }else{
                             filterSearchAirLinesText(text+string)
