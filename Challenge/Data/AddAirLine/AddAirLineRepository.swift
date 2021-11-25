@@ -23,7 +23,7 @@ class AddAirLinesRepository: Repository
         
         return addAirLinesRepository!
     }
-   private init(remoteDataSource: AddAirLineDataSource) {
+    init(remoteDataSource: AddAirLineDataSource) {
         
         self.remoteDataSource = remoteDataSource
     }

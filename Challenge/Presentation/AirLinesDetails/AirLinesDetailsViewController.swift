@@ -37,8 +37,7 @@ class AirLinesDetailsViewController: BaseViewController {
 
     
     @IBAction func visitAirLineBtnPressed(_ sender: Any) {
-        guard let webSiteUrlString = airLinesListElemnt?.website
-        
+        guard let webSiteUrlString = airLinesListElemnt?.website 
         else {return}
         if (webSiteUrlString).contains("https"){
             if let url = URL(string: (webSiteUrlString)) {
