@@ -21,7 +21,7 @@ class GetAirLinesRemoteDataSource: GetAirLineDataSource {
             headers["Accept"] = "application/json"
                 
 
-                apiClient.executeGetRequest(url: url, parameters: nil, header: headers, compilationHandler: compilationHandler)
+            apiClient.executeRequest(url: url,method:.get ,parameters: nil, header: headers, compilationHandler: compilationHandler)
             }
             
 

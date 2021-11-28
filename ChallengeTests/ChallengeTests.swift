@@ -6,40 +6,56 @@
 //
 
 import XCTest
+import Alamofire
+
 @testable import Challenge
 
 class ChallengeTests: XCTestCase {
     
-    var addNewAirLineRepo: Repository?
-    
+    var viewModel:AddNewAirLineViewModel!
+   
+
     override func setUp() {
-        addNewAirLineRepo = AddAirLinesRepository.addAirLinesRepository(remoteDataSource: AddAirLinesRemoteDataSource.sharedInstance)
+       viewModel = AddNewAirLineViewModel()
+    }
+    
+    override func  tearDown() {
+        super.tearDown()
+        viewModel = nil
     }
 
     func testAddAirLine() {
-        addNewAirLineRepo!.getData(requestValue: AddNewAirLineRequestValues(name: "rasdsg", country: "rdg", slogan: "zg", headquaters: "zgxf"), compilationHandler: {json , error in
+
+        
+       
+
+            let expectations = expectation(description: "The Response result match the expected results")
+        
+        viewModel.addNewAirLineUseCase?.executeUseCase(requestValues:AddNewAirLineRequestValues(name: "gvhvhg", country: "safa", slogan: "asf", headquaters: "asfa"), compilationHandler: {(response, error) in
+            XCTAssertNotNil(response)
             
-            XCTAssertNil(json)
-            guard let json = json else {
-                XCTFail()
-                return
-            }
-            do {
-                let jsonData = try JSONSerialization.data(withJSONObject: json, options: [])
-                let addNewAirLineResponse = try! JSONDecoder().decode([Int].self, from:jsonData)
-                XCTAssertNotNil(addNewAirLineResponse)
-                
-            } catch  {
-                XCTFail(error.localizedDescription)
-            }
+            
+     
+            //XCTAssertNil(response)
+            expectations.fulfill()
 
             
+           
+
+            })
+        waitForExpectations(timeout: 10, handler: { (error) in
+            if let error = error {
+                print("Failed : \(error.localizedDescription)")
+            }
+
+    
+
+        
+
         })
-
-        }
 
     }
     
   
-
+}
  

@@ -10,7 +10,7 @@ import Alamofire
 
 protocol APIClient{
     
-    func executeGetRequest(url:String,parameters: [String:Any]?,header : HTTPHeaders,compilationHandler:@escaping (Any?,Error?) -> Void)
-    
-    func executePostRequest(url:String,parameters: [String:Any]?,header : HTTPHeaders,compilationHandler:@escaping (Any?,Error?) -> Void)
+   func executeRequest(url:String,method:HTTPMethod,parameters: [String:Any]?,header : HTTPHeaders,compilationHandler:@escaping (Any?,Error?) -> Void)
 }
+
+

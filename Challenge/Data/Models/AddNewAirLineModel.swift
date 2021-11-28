@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct AddNewAirlinesModel: Codable {
+ struct AddNewAirlinesModel: Codable {
     var name, country, logo, slogan: String?
     var headQuaters, website, established: String?
     var id: Int?

@@ -30,7 +30,7 @@ class AddAirLinesRemoteDataSource: AddAirLineDataSource {
             headers["Accept"] = "application/json"
                 
 
-                apiClient.executePostRequest(url: url, parameters: parameters, header: headers, compilationHandler: compilationHandler)
+            apiClient.executeRequest(url: url, method: .post, parameters: parameters, header: headers, compilationHandler: compilationHandler)
             }
             
 

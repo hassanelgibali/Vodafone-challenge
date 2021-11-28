@@ -19,31 +19,10 @@ struct AlamofireClient:APIClient {
     fileprivate init() {
         
     }
-    func executeGetRequest(url:String,parameters: [String:Any]?,header : HTTPHeaders,compilationHandler:@escaping (Any?,Error?) -> Void){
-    
-        
-        AF.request(url, parameters: parameters, headers: header).responseJSON { (response:DataResponse<Any, AFError>) in
-            switch(response.result) {
-            case .success(_):
-                if let data = response.data{
-                    print(response.result)
-                    compilationHandler(data,nil)
-                }
-                break
-                
-            case .failure(_):
-                print (response.response?.description ?? "default value")
-                compilationHandler(response.response?.statusCode,nil)
 
-                break
-                
-            }
-        }
-    }
+    func executeRequest(url:String,method:HTTPMethod,parameters: [String:Any]?,header : HTTPHeaders,compilationHandler:@escaping (Any?,Error?) -> Void){
     
-    func executePostRequest(url:String,parameters: [String:Any]?,header : HTTPHeaders,compilationHandler:@escaping (Any?,Error?) -> Void){
-    
-        AF.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: header ).responseJSON { (response:DataResponse<Any, AFError>) in
+        AF.request(url, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: header ).responseJSON { (response:DataResponse<Any, AFError>) in
             
             switch(response.result) {
             case .success(_):
